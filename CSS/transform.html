@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        body {
+            perspective: 500px;
+            background-color: rgb(207, 236, 169);
+            text-align: center;
+        }
+        .box {
+            height: 50px;
+            width: 50px;
+            padding: 5px;
+            margin: 20px;
+            border: 3px solid black;
+            border-radius: 5px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            display: inline-block;
+            text-align: center;
+            line-height: 22px;
+            color: bisque;
+            font-weight: bold;
+        }   
+
+
+        #box1 {
+            background-color: lime;
+        }
+        #box1:hover {
+            transform: rotate(45deg);
+        }
+
+        #box2 {
+            background-color: blueviolet;
+        }
+        #box2:hover {
+            transform: rotate(180deg);
+        }
+
+        #box3 {
+            background-color: indianred;
+        }
+        #box3:hover {
+            transform: rotateX(45deg);
+        }
+
+        #box4 {
+            background-color: violet;
+        }
+        #box4:hover {
+            transform: rotateY(45deg);
+        }
+
+
+        #box5 {
+            background-color: rgb(194, 66, 88);
+        }
+        #box5:hover {
+            transform: scale(0.5);
+        }
+
+        #box6 {
+            background-color: rgb(197, 165, 228);
+        }
+        #box6:hover {
+            transform: scale(0.9);
+        }
+
+        #box7 {
+            background-color: rgb(243, 50, 50);
+        }
+        #box7:hover {
+           transform: scale(2);
+        }
+
+        #box8 {
+            background-color: rgb(136, 121, 136);
+        }
+        #box8:hover {
+            transform: scale(2.5);
+        }
+
+        #box9 {
+            background-color: rgb(230, 152, 152);
+        }
+        #box9:hover {
+           transform: translate(-50px);
+        }
+
+        #box10 {
+            background-color: rgb(185, 25, 185);
+        }
+        #box10:hover {
+            transform: translate(30px);
+        }
+
+
+        #box11 {
+            background-color: rgb(136, 91, 91);
+        }
+        #box11:hover {
+           transform: skew(45deg);
+        }
+
+        #box12 {
+            background-color: rgb(71, 48, 71);
+        }
+        #box12:hover {
+            transform: skew(180deg);
+        }
+        
+    </style>
+</head>
+<body>
+     <div id="box1" class="box"><br>45 deg</div>
+     <div id="box2" class="box">180 deg</div>
+     <div id="box3" class="box">X<br>45 deg</div>
+     <div id="box4" class="box">Y<br>45 deg</div>
+
+     <hr>
+
+     <div id="box5" class="box"><br>Scale 2</div>
+     <div id="box6" class="box"><br>Scale 4</div>
+     <div id="box7" class="box"><br>Scale 6</div>
+     <div id="box8" class="box"><br>Scale 8</div>
+
+     <hr>
+
+     <div id="box9" class="box">Trans</div>
+     <div id="box10" class="box">Trans</div>
+
+     <hr>
+
+     <div id="box11" class="box">Skew</div>
+     <div id="box12" class="box">Skew</div>
+
+
+</body>
+</html>

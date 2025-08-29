@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 75px;
+    width: 75px;
+    border: 3px solid black;
+    margin: 5px ;
+}
+
+#heading {text-align: center;}
+
+#container {
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: rgb(126, 226, 126);
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+#box1 {
+    background-color: darkorchid;
+    order: 3;
+}
+
+#box2 {
+    background-color: orange;
+    order: 4;
+}
+
+#box3 {
+    background-color: royalblue;
+    order: 1;
+}
+
+#box4 {
+    background-color: tomato;
+    order: 2;
+}

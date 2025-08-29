@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            perspective: 500px;
+            background-color: rgb(102, 91, 206);
+        }
+         .box {
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: rgb(245, 116, 83);
+            position: relative;
+            top: 10px;
+            left: 10px;
+            text-align: center;
+    
+
+            animation: ghumakkad 2s ease-in-out 1s infinite alternate-reverse;
+        }
+
+        @keyframes ghumakkad {
+            0% {left: 10px; top: 0px;}
+            50% {left: 150px; top: 100px;}
+            100% {left: 500px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+      <div id="box1" class="box"><b>Animate</b></div> 
+</body>
+</html>
